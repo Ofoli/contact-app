@@ -13,5 +13,5 @@ declare global {
   }
   type DispatchType = (action: Action) => void;
   type ChangeEventProp = (event: React.ChangeEvent<HTMLInputElement>) => void;
-  type ChangeEventType = React.FormEvent<HTMLInputElement>;
+  type GenericEventType = React.BaseSyntheticEvent;
 }

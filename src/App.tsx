@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contacts from "./components/Contacts";
-import AddContact from "./components/AddContact";
-import EditContact from "./components/EditContact";
+import withContactForm from "./components/withContact";
 import Header from "./layout/Header";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
-
 import { Provider } from "./context/context";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
+const AddContact = withContactForm("add");
+const EditContact = withContactForm("edit");
 class App extends Component {
   render() {
     return (

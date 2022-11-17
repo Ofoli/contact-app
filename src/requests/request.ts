@@ -33,7 +33,7 @@ async function fetchAllContactsRequest(): Promise<ContactProp[] | undefined> {
 }
 async function fetchContactRequest(id: string): Promise<Response> {
   try {
-    const { data: contact } = await axios.get(`${BASE_URL}/${id}}`);
+    const { data: contact } = await axios.get(`${BASE_URL}/${id}`);
     return contact;
   } catch (err) {
     console.log("ERROR", err);
