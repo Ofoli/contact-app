@@ -70,7 +70,6 @@ export default function EditContact() {
 
     // Clear State
     setState(INITIAL_STATE);
-
     // this.props.history.push("/");
   };
 
