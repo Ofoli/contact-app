@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/jest": "^29.2.3",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
     "axios": "^0.27.2",
     "bootstrap": "^4.1.2",
     "classnames": "^2.2.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.4",
-    "react-scripts": "5.0.1",
     "react-router-dom": "^6.2.2",
+    "react-scripts": "5.0.1",
     "uuid": "^3.3.2"
   },
   "scripts": {
@@ -19,7 +23,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "devDependencies": {},
   "browserslist": {
     "production": [
       ">0.2%",
@@ -31,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3"
   }
 }
