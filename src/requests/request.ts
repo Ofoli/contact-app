@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 
 const BASE_URL = "https://jsonplaceholder.typicode.com/users";
 
@@ -15,7 +15,6 @@ interface ValidResponse extends Payload {
 type Response = ValidResponse | undefined;
 
 async function addContactRequest(payload: Payload): Promise<Response> {
-  console.log(payload);
   try {
     const { data } = await axios.post(BASE_URL, payload);
     return data;
